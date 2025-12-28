@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "24d01b7d-a1a2-48be-a4d2-f7e2a368ff10",
+		"name": "SmartToDo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46264341"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"sou25\",\n    \"email\": \"sou@gmail.com\",\n    \"fullname\": \"Sougata Purkait\",\n    \"password\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/users/register",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/users/logout",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"sou@gmail.com\",\n    \"password\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/users/login",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"First Task\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/users/tasks",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"users",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Updated First Task\",\n    \"description\": \"hello world\",\n    \"priority\": \"high\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/users/tasks/69514fc7a91cd123f32e27d2",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"users",
+						"tasks",
+						"69514fc7a91cd123f32e27d2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"First Task\"\n}"
+				},
+				"url": {
+					"raw": "{{server}}/users/tasks",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"users",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"First Task\"\n}"
+				},
+				"url": {
+					"raw": "{{server}}/users/tasks/695184fd471fe9325e7f2dea",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"users",
+						"tasks",
+						"695184fd471fe9325e7f2dea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Task",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"First Task\"\n}"
+				},
+				"url": {
+					"raw": "{{server}}/users/task/69514fc7a91cd123f32e27d2",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"users",
+						"task",
+						"69514fc7a91cd123f32e27d2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
