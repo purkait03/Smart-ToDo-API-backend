@@ -29,18 +29,18 @@ A RESTful backend API for task management with user authentication.
 ### Auth Routes
 | Method | Endpoint | Description |
 |------|---------|------------|
-| POST | /api/v1/auth/register | Register user |
-| POST | /api/v1/auth/login | Login user |
-| POST | /api/v1/auth/logout | Logout user |
+| POST | /api/v1/users/register | Register user |
+| POST | /api/v1/users/login | Login user |
+| POST | /api/v1/users/logout | Logout user |
 
 ### Task Routes (Protected)
 | Method | Endpoint | Description |
 |------|---------|------------|
-| POST | /api/v1/tasks | Create task |
-| GET | /api/v1/tasks | Get all tasks |
-| GET | /api/v1/tasks/:id | Get single task |
-| PUT | /api/v1/tasks/:id | Update task |
-| DELETE | /api/v1/tasks/:id | Delete task |
+| POST | /api/v1/users/tasks | Create task |
+| GET | /api/v1/users/tasks | Get all tasks |
+| GET | /api/v1/users/tasks/:id | Get single task |
+| PUT | /api/v1/users/tasks/:id | Update task |
+| DELETE | /api/v1/users/tasks/:id | Delete task |
 
 ---
 
