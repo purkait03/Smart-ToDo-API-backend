@@ -63,8 +63,9 @@ The following additional features were implemented to enhance security and user 
   - Authorization header (Postman)
 
 Example:
-
+```http
 Authorization: Bearer <access_token>
+```
 ---
 
 ## 🧪 Postman Collection
@@ -76,6 +77,16 @@ postman/SmartToDo.postman_collection.json
 Import this file into Postman to test APIs.
 
 ---
+
+## ⚙️ Installation & Execution
+
+Clone the repository, install dependencies, configure environment variables, and start the server locally using the steps below.
+
+```bash
+git clone https://github.com/<your-username>/smart-todo-api.git
+cd smart-todo-api
+npm install
+```
 
 ## ⚙️ Environment Variables
 
@@ -89,12 +100,17 @@ ACCESS_TOKEN_SECRET=your_access_token_secret
 ACCESS_TOKEN_EXPIRY = 1d
 REFRESH_TOKEN_SECRET=your_refresh_token_secret
 REFRESH_TOKEN_EXPIRY = 10d
-
+```
 ▶️ Run Locally
 
-npm install
+```bash
 npm run dev
+```
+Once running, the API will be available at:
+
+```text
+http://localhost:8000
+```
 
 👨‍💻 Author
-
 Sougata Purkait
