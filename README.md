@@ -42,6 +42,17 @@ A RESTful backend API for task management with user authentication.
 | PUT | /api/v1/users/tasks/:id | Update task |
 | DELETE | /api/v1/users/tasks/:id | Delete task |
 
+## ⭐ Additional Features
+
+The following additional features were implemented to enhance security and user experience:
+
+| Feature | Description |
+|-------|-------------|
+| Change Password | /change-password | Allows an authenticated user to securely change their password by providing the current and new password. |
+| Update Account Details | /update-account | Enables users to update profile information such as full name and email while maintaining data integrity. |
+| Refresh Token | /refresh-token | Implements refresh token mechanism to generate a new access token without requiring the user to log in again. |
+
+
 ---
 
 ## 🔐 Authentication
