@@ -83,7 +83,7 @@ Import this file into Postman to test APIs.
 Clone the repository, install dependencies, configure environment variables, and start the server locally using the steps below.
 
 ```bash
-git clone https://github.com/purkait03/Smart-ToDo-API-backend
+git clone https://github.com/purkait03/Smart-ToDo-API-backend.git
 cd smart-todo-api
 npm install
 ```
